@@ -76,7 +76,7 @@ function ContactUs() {
                   <div>
                     <label className="block text-sm font-medium text-gray-300 mb-2">Tell me about your
                       project *</label>
-                    <textarea name="description" required rows="4"
+                    <textarea name="description" required
                       className="w-full px-4 py-3 bg-[#2d3035] border border-white/10 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#A3D1FF] focus:border-transparent"
                       placeholder="What are your goals? What challenges are you facing? Any specific requirements or timeline?"
                       aria-required="true"></textarea>

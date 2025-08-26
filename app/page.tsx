@@ -1,16 +1,15 @@
-'use client';
-import Slider from 'react-slick';
+
 import Image from "next/image";
 import Link from "next/link";
 
 import CanvasDots from '@/components/CanvasDots';
+import PortfolioCarouselWrapper from "@/components/PortfolioCarouselWrapper";
+
+
+
 
 export default function Home() {
-  const settings = {
-    speed: 800,
-    fade: true,
-    cssEase: 'linear'
-  };
+    
   return (
     <main className="relative pt-[4.236rem]">
 
@@ -187,16 +186,12 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-
-
-
               </div>
-
             </div>
           </div>
         </div>
 
-        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
+        <div className="absolute left-1/2 transform -translate-x-1/2 bottom-5">
           <div className="flex flex-col items-center">
             <span className="text-gray-400 text-xs sm:text-sm mb-2">Scroll to explore</span>
             <div
@@ -671,152 +666,7 @@ export default function Home() {
           </div>
 
           <div className='featured-projects'>
-            <Slider {...settings}>
-              <div
-                className="relative w-full !h-[400px] sm:!h-[450px] md:!h-[500px] overflow-hidden bg-[#1b1b1b] rounded-xl border border-white/10">
-                <div className="absolute inset-0 grid md:grid-cols-2">
-                  <div className="relative overflow-hidden">
-                    <Image
-                      className="w-full h-full object-cover"
-                      src="/natura.png"
-                      alt="Natura"
-                      width={0}
-                      height={0}
-                      sizes='auto'
-                      priority
-                    />
-                    <div
-                      className="absolute inset-0 bg-gradient-to-r from-transparent to-[#1b1b1b] hidden md:block">
-                    </div>
-                    <div
-                      className="absolute inset-0 bg-gradient-to-t from-[#1b1b1b] to-transparent md:hidden">
-                    </div>
-                  </div>
-                  <div className="flex flex-col justify-center p-6 sm:p-8 md:p-12 relative">
-                    <div className="md:max-w-md portfolio-content">
-                      <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-2 sm:mb-4">
-                        Natura
-                      </h3>
-                      <p className="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6 md:mb-8">
-                        It seems the business world is synonymous with hard, boring work, suits and
-                        ties, shopping and acquisitions, producing, consuming, more, more, more..
-                      </p>
-                      <div className="flex flex-wrap gap-3 sm:gap-4">
-                        <a href="https://naturaselection.com/" target="_blank"
-                          rel="noopener noreferrer"
-                          className="group px-3 sm:px-4 py-2 border border-[#A3D1FF] text-[#A3D1FF] rounded-lg hover:bg-[#A3D1FF] hover:text-black transition-colors text-sm font-medium flex items-center gap-1 sm:gap-2">
-                          Visit
-                          Website
-                          <Image
-                            className="lucide lucide-external-link w-3 h-3 sm:w-4 sm:h-4 group-hover:brightness-[0%]"
-                            src="/visit-website.svg"
-                            alt="Natura"
-                            width={0}
-                            height={0}
-                            sizes='auto'
-                            priority
-                          />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="relative w-full !h-[400px] sm:!h-[450px] md:!h-[500px] overflow-hidden bg-[#1b1b1b] rounded-xl border border-white/10">
-                <div className="absolute inset-0 grid md:grid-cols-2">
-                  <div className="relative overflow-hidden">
-                    <Image
-                      className="w-full h-full object-cover"
-                      src="/bomboneriapons.png"
-                      alt="Binns Media Group"
-                      width={0}
-                      height={0}
-                      sizes='auto'
-                      priority
-                    />
-                    <div
-                      className="absolute inset-0 bg-gradient-to-r from-transparent to-[#1b1b1b] hidden md:block">
-                    </div>
-                    <div
-                      className="absolute inset-0 bg-gradient-to-t from-[#1b1b1b] to-transparent md:hidden">
-                    </div>
-                  </div>
-                  <div className="flex flex-col justify-center p-6 sm:p-8 md:p-12 relative">
-                    <div className="md:max-w-md portfolio-content">
-                      <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-2 sm:mb-4">
-                        Bomboneriapons</h3>
-                      <p className="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6 md:mb-8">
-                        You'll find a showcase of all our products, sorted by category, holiday, and
-                        ratings, making it easier for you</p>
-                      <div className="flex flex-wrap gap-3 sm:gap-4">
-                        <a href="https://bomboneriapons.com" target="_blank"
-                          rel="noopener noreferrer"
-                          className="group px-3 sm:px-4 py-2 border border-[#A3D1FF] text-[#A3D1FF] rounded-lg hover:bg-[#A3D1FF] hover:text-black transition-colors text-sm font-medium flex items-center gap-1 sm:gap-2">Visit
-                          Website
-                          <Image
-                            className="lucide lucide-external-link w-3 h-3 sm:w-4 sm:h-4 group-hover:brightness-[0%]"
-                            src="/visit-website.svg"
-                            alt="Natura"
-                            width={0}
-                            height={0}
-                            sizes='auto'
-                            priority
-                          />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="relative w-full !h-[400px] sm:!h-[450px] md:!h-[500px] overflow-hidden bg-[#1b1b1b] rounded-xl border border-white/10">
-                <div className="absolute inset-0 grid md:grid-cols-2">
-                  <div className="relative overflow-hidden">
-                    <Image
-                      className="w-full h-full object-cover"
-                      src="/shantam-builders.png"
-                      alt="Shantam builders Group"
-                      width={0}
-                      height={0}
-                      sizes='auto'
-                      priority
-                    />
-                    <div
-                      className="absolute inset-0 bg-gradient-to-r from-transparent to-[#1b1b1b] hidden md:block">
-                    </div>
-                    <div
-                      className="absolute inset-0 bg-gradient-to-t from-[#1b1b1b] to-transparent md:hidden">
-                    </div>
-                  </div>
-                  <div className="flex flex-col justify-center p-6 sm:p-8 md:p-12 relative">
-                    <div className="md:max-w-md portfolio-content">
-                      <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-2 sm:mb-4">
-                        Shantam Builders</h3>
-                      <p className="text-sm sm:text-base text-gray-300 mb-4 sm:mb-6 md:mb-8">
-                        A dynamic platform showcasing construction projects, builder portfolios, and
-                        completed developments.</p>
-                      <div className="flex flex-wrap gap-3 sm:gap-4">
-                        <a href="https://www.shantambuilders.com" target="_blank"
-                          rel="noopener noreferrer"
-                          className="group px-3 sm:px-4 py-2 border border-[#A3D1FF] text-[#A3D1FF] rounded-lg hover:bg-[#A3D1FF] hover:text-black transition-colors text-sm font-medium flex items-center gap-1 sm:gap-2">Visit
-                          Website
-                          <Image
-                            className="lucide lucide-external-link w-3 h-3 sm:w-4 sm:h-4 group-hover:brightness-[0%]"
-                            src="/visit-website.svg"
-                            alt="Natura"
-                            width={0}
-                            height={0}
-                            sizes='auto'
-                            priority
-                          />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Slider>
+            <PortfolioCarouselWrapper />
           </div>
 
           <div className="mt-8 sm:mt-12 text-center">
@@ -853,7 +703,7 @@ export default function Home() {
           </div>
 
           <div
-            className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 text-center mb-8 sm:mb-12 md:mb-16 opacity-0 translate-y-10 transition-all duration-1000 ease-out opacity-100 translate-y-0">
+            className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 text-center mb-8 sm:mb-12 md:mb-16 ">
             <div
               className="bg-[#1b1b1b] p-4 sm:p-6 rounded-xl border border-white/10 hover:border-[#A3D1FF] transition-all">
               <div
@@ -1696,8 +1546,8 @@ export default function Home() {
                       </h4>
                       <p className="text-sm sm:text-base text-gray-400">
 
-                        Drive <strong className="text-white">40% higher user engagement</strong>
-                        with user-tested interfaces and interactive prototypes.
+                        Drive <strong className="text-white">40% higher user engagement </strong> 
+                         with user-tested interfaces and interactive prototypes.
                       </p>
                     </div>
                   </div>
@@ -1999,7 +1849,7 @@ export default function Home() {
 
       <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 relative bg-white/7">
         {/* <canvas className='connecting-dots absolute inset-0 w-full h-full z-0'></canvas> */}
-         <CanvasDots />
+        <CanvasDots />
         <div className="max-w-7xl mx-auto text-center relative z-10 anim-title">
           <div>
             <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">Ready to Transform Your Business?

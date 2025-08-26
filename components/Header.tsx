@@ -29,6 +29,9 @@ function Header() {
                                 <Link className="block py-2 text-base font-medium transition-colors text-white hover:text-[#A3D1FF]" href="/">Home</Link>
                             </div>
                             <div className="relative group">
+                                <Link className="block py-2 text-base font-medium transition-colors text-white hover:text-[#A3D1FF]" href="/about">AboutUs</Link>
+                            </div>
+                            <div className="relative group">
                                 <Link className="block py-2 text-base font-medium transition-colors text-white hover:text-[#A3D1FF]" href="/work">Work</Link>
                             </div>
                             <div className="relative group">

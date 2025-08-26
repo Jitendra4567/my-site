@@ -6,7 +6,7 @@ import CanvasDots from "@/components/CanvasDots";
 function AboutUs() {
   return (
     <>
-      <section className="relative lg:p-24 p-0 lg:pt-0 pt-[100px] min-h-screen flex items-center justify-center bg-black overflow-hidden">
+      <section className="relative lg:p-24 p-0 pt-[100px] min-h-screen flex items-center justify-center bg-black overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
             className="w-full h-full object-cover"
